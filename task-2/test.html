@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="inputTest" placeholder="Type here your e-mail" type="test" />
+    <button id="submit">Submit</button>
+    <script>
+      // function newLi() {
+      //   let uls = document.getElementById('wrap').;
+      //   let newli = document.createElement('li');
+      //   li.innerText = 'NewLi';
+      //   uls[1].appendChild(li);
+      // }
+      // newLi();
+      var ul = document.createElement('ul');
+      document.body.appendChild(ul).setAttribute('id', 'e-mail-list');
+
+      // var del = document.createElement('button');
+      // document
+      //   .querySelectorAll('li')
+      //   .appendChild(del)
+      //   .setAttribute('id', 'e-mail-list');
+
+      function getInputValue() {
+        let value = document.getElementById('inputTest');
+
+        var newLi = document.createElement('li');
+        document.getElementById('e-mail-list').appendChild(newLi);
+
+        newLi.innerHTML = inputTest.value;
+      }
+
+      document
+        .getElementById('submit')
+        .addEventListener('click', getInputValue);
+    </script>
+  </body>
+</html>
