@@ -1,4 +1,9 @@
-function emailValidation() {}
+function emailValidation(value) {
+  return /.*@.*\..*/.test(value);
+}
+
+// abc@site.com
+// abc@site.ua.com
 
 /*
 
