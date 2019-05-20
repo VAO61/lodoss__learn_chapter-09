@@ -1,0 +1,22 @@
+.button {
+  margin-left: 15px;
+}
+.button_delete {
+  color: red;
+  font-size: 20px;
+  border-radius: 4px;
+}
+#inputTest {
+  padding: 5px 3px;
+  border-radius: 3px;
+}
+#submit {
+  margin-left: 5px;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 1.05em;
+}
+
+li {
+  padding-bottom: 15px;
+}
