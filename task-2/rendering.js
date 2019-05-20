@@ -27,6 +27,7 @@ const renderList = () => {
     let button = document.createElement('button');
     button.innerText = 'X';
     button.type = 'button';
+    button.className = 'button button_delete';
     button.addEventListener('click', () => {
       removeElement(item.id);
     });
