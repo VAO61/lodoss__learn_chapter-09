@@ -27,17 +27,8 @@ const renderList = () => {
     let button = document.createElement('button');
     button.innerText = 'X';
     button.type = 'button';
-    button.addEventListener('click', event => {
-      // TODO: http://kharchuk.ru/JavaScript.pdf 415стр.
-      // TODO: 17.2.1. Распространение событий
-      // TODO: Остановка всплытия события клика
-      // event.preventDefault();
-      // TODO: Остановка погружения события клика
-      // event.stopPropagation();
+    button.addEventListener('click', () => {
       removeElement(item.id);
-
-      // Остановка всплытия события клика
-      // return false;
     });
 
     var li = document.createElement('li');
