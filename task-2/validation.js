@@ -1,5 +1,7 @@
 function emailValidation(value) {
-  return /[^-_\s@\.]\w+\.?-?\w+@{1}\w+\.\w+/g.test(value);
+  return /^[a-zA-Z]+([-._]?[a-zA-Z]+){1,}@[a-zA-Z_]+?\.[a-zA-Z]{2,6}$/.test(
+    value
+  );
 }
 
 // abc@site.com
@@ -22,6 +24,8 @@ vao frontend@gmail.com
 
 vao_front-END@gmail.com
 vao.frontend@gmail.com
+vaofrontend@gmail.com
+ewr.ertew.ertewt@gasg.ru
 
 */
 
