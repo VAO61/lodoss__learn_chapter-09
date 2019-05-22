@@ -1,0 +1,18 @@
+{
+  "name": "chapter-09",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:VAO61/lodoss__learn_chapter-09.git",
+  "author": "VAO61 <vao.frontend@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack",
+    "serv": "static build"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "node-static": "^0.7.11",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  }
+}
