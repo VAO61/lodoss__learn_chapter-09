@@ -6,8 +6,8 @@
   "author": "VAO61 <vao.frontend@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
+    "watch": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
     "serv": "static build"
   },
   "devDependencies": {
