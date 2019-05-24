@@ -1,6 +1,7 @@
+@import './scss/variables.scss';
+
 $offset: 15px;
 
 body {
-  padding-top: $offset * 10;
-  background-color: red;
+  background-color: $color-brand;
 }
