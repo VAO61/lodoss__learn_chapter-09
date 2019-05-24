@@ -1,9 +1,9 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+// const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
-  source: path.join(__dirname, 'source'),
-  build: path.join(__dirname, 'build')
+  source: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'dist')
 };
 
 module.exports = {
@@ -11,10 +11,10 @@ module.exports = {
   output: {
     path: PATHS.build,
     filename: '[name].js'
-  },
-  plugins: [
-    new HTMLWebpackPlugin({
-      title: 'Webpack app'
-    })
-  ]
+  }
+  // plugins: [
+  //   new HTMLWebpackPlugin({
+  //     title: 'Webpack app'
+  //   })
+  // ]
 };
