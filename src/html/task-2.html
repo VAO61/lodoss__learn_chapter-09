@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <style type="text/css">
+      body {
+        background-color: #f4f3f4;
+        height: 100vh;
+      }
       .button {
         margin-left: 15px;
       }
@@ -15,6 +20,7 @@
         border-radius: 4px;
       }
       #inputTest {
+        /* display: flex; */
         padding: 5px 3px;
         border-radius: 3px;
       }
@@ -28,11 +34,25 @@
       li {
         padding-bottom: 15px;
       }
+
+      .email-list {
+        position: absolute;
+        z-index: 2;
+        width: 624px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: solid 1px;
+      }
     </style>
   </head>
   <body>
-    <input id="inputTest" placeholder="Type here your e-mail" type="test" />
-    <button id="submit" type="button">Submit</button>
+    <section class="container email-list">
+      <h2 class="email-list__h2">Email list</h2>
+      <input id="inputTest" placeholder="Type here your e-mail" type="test" />
+      <button id="submit" type="button">Submit</button>
+    </section>
 
     <script src="../js/validation.js"></script>
     <script src="../js/rendering.js"></script>
