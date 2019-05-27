@@ -1,6 +1,10 @@
 let nextId = 1;
 var ul = document.createElement('ul');
-document.body.appendChild(ul).setAttribute('id', 'e-mail-list');
+ul.className = 'email-list__items list-items';
+document
+  .getElementById('emaiList')
+  .appendChild(ul)
+  .setAttribute('id', 'e-mail-list');
 
 let store = [];
 
@@ -27,12 +31,13 @@ const renderList = () => {
     let button = document.createElement('button');
     button.innerText = 'X';
     button.type = 'button';
-    button.className = 'button button_delete';
+    button.className = 'btn btn_delete list-items__btn list-items__btn_delete';
     button.addEventListener('click', () => {
       removeElement(item.id);
     });
 
     var li = document.createElement('li');
+    li.className = 'list-items__item';
     li.innerHTML = item.value;
     li.appendChild(button);
 

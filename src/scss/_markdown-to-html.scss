@@ -35,9 +35,7 @@
     border: none;
     font-size: 1em;
 
-    &:focus,
-    &:hover,
-    &:active {
+    &:focus {
       border: none;
       outline: none;
     }
