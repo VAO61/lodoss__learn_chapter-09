@@ -11,5 +11,18 @@
   &__h2 {
     text-align: center;
     text-transform: uppercase;
+    color: $color-brand_light;
+  }
+
+  &__input {
+    display: flex;
+    width: 100%;
+    padding: $offset $offset * 3;
+    border-radius: 3px;
+    font-size: 1em;
+
+    &::placeholder {
+      font-style: italic;
+    }
   }
 }

@@ -16,7 +16,7 @@ const addElement = () => {
     store.push({ id: nextId++, value: value });
     renderList();
   } else {
-    alert(`${value} не является email адресом1`);
+    alert(`${value} не является email адресом`);
   }
 };
 
