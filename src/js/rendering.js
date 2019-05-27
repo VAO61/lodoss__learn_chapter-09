@@ -13,8 +13,8 @@ const removeElement = id => {
   renderList();
 };
 
-const addElement = () => {
-  let value = document.getElementById('inputTest').value;
+function addElement() {
+  let value = document.getElementById('inputEmail').value;
 
   if (emailValidation(value)) {
     store.push({ id: nextId++, value: value });
@@ -22,7 +22,7 @@ const addElement = () => {
   } else {
     alert(`${value} не является email адресом`);
   }
-};
+}
 
 const renderList = () => {
   ul.innerHTML = '';
@@ -46,3 +46,9 @@ const renderList = () => {
 };
 
 document.getElementById('submit').addEventListener('click', addElement);
+
+document.getElementById('inputEmail').addEventListener('keypress', () => {
+  if (event.keyCode === 13) {
+    addElement();
+  }
+});

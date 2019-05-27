@@ -37,10 +37,15 @@
         display: none;
       }
     }
+
+    &:hover .list-items__btn_delete {
+      opacity: 1;
+    }
   }
 
   &__btn {
     &_delete {
+      opacity: 0;
       right: $offset;
     }
   }

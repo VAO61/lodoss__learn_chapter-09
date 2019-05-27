@@ -21,13 +21,14 @@ h3 {
   text-transform: uppercase;
 }
 
-// Временно:
+// Теперь необязательна, поэтому так описана:
 #submit {
   position: absolute;
-  top: 8px;
-  right: 0;
+  top: 9px;
+  right: $offset;
   margin-left: 5px;
   padding: 3px;
   border-radius: 3px;
+  color: green;
   font-size: 1.05em;
 }
