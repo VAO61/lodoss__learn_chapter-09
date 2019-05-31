@@ -17,8 +17,30 @@
     </style>
   </head>
   <body>
-    <textarea name="" id="markdownToHTMLInput" cols="90" rows="20"></textarea>
-    <div id="markdownToHTMLResult"></div>
+    <section class="markdown-to-html">
+      <div class="markdown-to-html__row">
+        <h2 class="markdown-to-html__title">Markdown</h2>
+        <h2 class="markdown-to-html__title">Preview</h2>
+      </div>
+      <div class="markdown-to-html__row">
+        <div class="markdown-to-html__item">
+          <textarea
+            class="markdown-to-html__markdown"
+            name=""
+            id="markdownToHTMLInput"
+            cols=""
+            rows=""
+            autofocus
+          ></textarea>
+        </div>
+        <div class="markdown-to-html__item">
+          <div
+            class="markdown-to-html__preview"
+            id="markdownToHTMLResult"
+          ></div>
+        </div>
+      </div>
+    </section>
     <script src="../js/markdown-to-html.js"></script>
   </body>
 </html>

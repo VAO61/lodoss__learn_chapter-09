@@ -1,6 +1,10 @@
 let nextId = 1;
 var ul = document.createElement('ul');
-document.body.appendChild(ul).setAttribute('id', 'e-mail-list');
+ul.className = 'email-list__items list-items';
+document
+  .getElementById('emaiList')
+  .appendChild(ul)
+  .setAttribute('id', 'e-mail-list');
 
 let store = [];
 
@@ -9,16 +13,16 @@ const removeElement = id => {
   renderList();
 };
 
-const addElement = () => {
-  let value = document.getElementById('inputTest').value;
+function addElement() {
+  let value = document.getElementById('inputEmail').value;
 
   if (emailValidation(value)) {
     store.push({ id: nextId++, value: value });
     renderList();
   } else {
-    alert(`${value} не является email адресом1`);
+    alert(`${value} не является email адресом`);
   }
-};
+}
 
 const renderList = () => {
   ul.innerHTML = '';
@@ -27,12 +31,13 @@ const renderList = () => {
     let button = document.createElement('button');
     button.innerText = 'X';
     button.type = 'button';
-    button.className = 'button button_delete';
+    button.className = 'btn btn_delete list-items__btn list-items__btn_delete';
     button.addEventListener('click', () => {
       removeElement(item.id);
     });
 
     var li = document.createElement('li');
+    li.className = 'list-items__item';
     li.innerHTML = item.value;
     li.appendChild(button);
 
@@ -41,3 +46,9 @@ const renderList = () => {
 };
 
 document.getElementById('submit').addEventListener('click', addElement);
+
+document.getElementById('inputEmail').addEventListener('keypress', () => {
+  if (event.keyCode === 13) {
+    addElement();
+  }
+});

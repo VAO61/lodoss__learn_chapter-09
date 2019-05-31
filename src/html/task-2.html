@@ -6,44 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style type="text/css">
-      body {
-        background-color: #f4f3f4;
-        height: 100vh;
-      }
-      .button {
-        margin-left: 15px;
-      }
-      .button_delete {
-        color: red;
-        font-size: 20px;
-        border-radius: 4px;
-      }
-      #inputTest {
-        /* display: flex; */
-        padding: 5px 3px;
-        border-radius: 3px;
-      }
-      #submit {
-        margin-left: 5px;
-        padding: 3px;
-        border-radius: 3px;
-        font-size: 1.05em;
-      }
-
-      li {
-        padding-bottom: 15px;
-      }
-    </style>
   </head>
   <body>
-    <section class="container email-list">
+    <section class="email-list">
       <h2 class="email-list__h2">Email list</h2>
-      <input id="inputTest" placeholder="Type here your e-mail" type="test" />
-      <button id="submit" type="button">Submit</button>
+      <div class="email-list__container" id="emaiList">
+        <input
+          class="email-list__input"
+          id="inputEmail"
+          placeholder="Type here to add new Email"
+          type="test"
+        />
+        <button class="btn" id="submit" type="button">+</button>
+      </div>
     </section>
 
-    <script src="../js/validation.js"></script>
-    <script src="../js/rendering.js"></script>
+    <script src="/js/validation.js"></script>
+    <script src="/js/rendering.js"></script>
   </body>
 </html>
