@@ -20,7 +20,7 @@ vao@gmail
 vao..frontend@gmail.com
 vao frontend@gmail.com
 
-Действительны: 
+Действительны:
 
 vao_front-END@gmail.com
 vao.frontend@gmail.com
