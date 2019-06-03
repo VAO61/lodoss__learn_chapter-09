@@ -6,10 +6,13 @@ module.exports = (env, ...argv) => {
   const isProduction = argv[0].mode === 'production';
 
   return {
-    entry: './src/index.js',
+    entry: {
+      'task-1': './src/task-1.js',
+      'task-2': './src/task-2.js'
+    },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'main-[hash].js'
+      filename: '[name].js?[hash]'
     },
     devtool: isProduction ? 'none' : 'inline-source-map',
     devServer: {
@@ -55,15 +58,17 @@ module.exports = (env, ...argv) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'style-[hash].css'
+        filename: 'style.css?[hash]'
       }),
       new HtmlWebpackPlugin({
         filename: 'task-1.html',
-        template: './src/html/task-1.html'
+        template: './src/html/task-1.html',
+        chunks: ['task-1']
       }),
       new HtmlWebpackPlugin({
         filename: 'task-2.html',
-        template: './src/html/task-2.html'
+        template: './src/html/task-2.html',
+        chunks: ['task-2']
       })
     ]
   };

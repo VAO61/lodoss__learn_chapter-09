@@ -1,3 +1,5 @@
+const emailValidation = require('./validation');
+
 let nextId = 1;
 var ul = document.createElement('ul');
 ul.className = 'email-list__items list-items';

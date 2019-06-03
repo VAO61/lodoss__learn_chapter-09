@@ -1,8 +1,8 @@
-function emailValidation(value) {
+module.exports = function emailValidation(value) {
   return /^[a-zA-Z]+([-._]?[a-zA-Z]+){1,}@[a-zA-Z_]+?\.[a-zA-Z]{2,6}(.[a-zA-Z]{2,6})?$/.test(
     value
   );
-}
+};
 
 // abc@site.com
 // abc@site.ua.com
