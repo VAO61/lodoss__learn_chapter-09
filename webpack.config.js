@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -45,14 +45,14 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style-[hash].css'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'task-1.html',
-      template: './src/html/task-1.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'task-2.html',
-      template: './src/html/task-2.html'
     })
+    // new HtmlWebpackPlugin({
+    //   filename: 'task-1.html',
+    //   template: './src/html/task-1.html'
+    // }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'task-2.html',
+    //   template: './src/html/task-2.html'
+    // })
   ]
 };
